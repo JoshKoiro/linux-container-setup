@@ -1,21 +1,60 @@
-MIT License
+FFP-NBD License (Freedom For Profit - No Being a Dick)
+Version 1.0
 
-Copyright (c) 2025 Josh Koiro
+TL;DR: Use this software to build cool shit, make bank, and have fun. Just don’t be a dick about it—give credit, don’t scam, and play nice. If you can’t handle that, fuck off.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Fallback License
+If this license gets shredded by some suit-wearing lawyer, it defaults to the MIT License. Check it out at https://opensource.org/licenses/MIT.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The FFP-NBD License lets you do whatever the fuck you want with this software. You can profit, tinker, or impress your friends. But here’s the deal: don’t be a fucking dick. We’re all here to create and share, so don’t ruin it by being a selfish prick. Be a decent human.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Definitions
+- Software: The code, docs, or other stuff under this license. Only covers what’s original to this project—other bits might have their own rules.
+- Author: The badass who did some work and found it in their heart to share it with you. They’re a Reasonable Person (probably).
+- Reasonable Person: Someone who respects the effort behind this software, gives credit where it's due, and doesn’t act like an asshole. They use, tweak, or share without fucking over the community.
+- Dick: A jerk who shits on everyone’s good time by:
+    - Scamming or harming others with the Software
+    - Stealing credit or pretending they wrote this shit themselves.
+    - Trolling, harassing, or gatekeeping in community spaces like Discord or GitHub.
+    - Demanding the Author’s time on a project he may have not looked at for 10 years and act like a whiny entitled fuck.
+    - Talking shit about the Author or contributors personally instead of the work.
+
+Note: “Dick” isn’t about gender—it’s about being an asshole. Anyone can be a dick, so don’t be one.
+
+Permissions (For Non-Dicks)
+
+If you’re a Reasonable Person, you can:
+
+- Use, copy, tweak, or merge the Software for any damn thing you want.
+- Sell it, build a startup, or slap it on a blockchain (good luck, bro).
+- Share it, but give a shoutout to the Author. Don’t be a stingy fuck.
+- Join or start communities around the Software—just don’t be a prick about it.
+- Critique it, but keep it about the work, not personal bullshit.
+- Toss a link to the original in your README if you’re feeling classy (not required).
+- Ignore the Software completely. Your call, no pressure.
+
+If you’re a Dick you are strictly forbidden to:
+
+- Use this to fuck people over with scams, malware, or other shady shit.
+- Steal credit or act like you’re some kind of genius who came up with this yourself
+- Troll, harass, or gatekeep in the community. Nobody likes a loudmouth asshole.
+- Demand the Author’s time or bug them like a clingy ex.
+- Shit-talk the Author or contributors personally.
+- Mess with anyone else’s right to use, share, or ignore this Software.
+
+No Warranty
+This Software is “as is.” If it crashes your laptop, eats your crypto, or summons a demon, that’s your problem. The Author’s not liable for your fuck-ups, so don’t come blaming anyone but yourself.
+
+If You’re a Dick
+No one can legally stop you from being an asshole, but if you violate the “No Being a Dick” rule
+
+Acknowledgements
+Big props to the following for inspiring this license:
+
+The WTFPL for its no-nonsense, do-whatever vibe.
+Stephen Eley’s Candy License for laying extended groundwork for not being a dick.
+Phil Sturgeon’s DBAD License for nailing the tone and clarity.
+AI for doing the heavy lifting to make this license sharp and not allowing me to waste too much time.
+
+Final Words
+Build awesome shit. Make money. Share the love. Don’t be a dick. It’s not fucking rocket science. If you can’t play nice, take your shitty attitude elsewhere.
