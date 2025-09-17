@@ -15,11 +15,11 @@ MODE="$1"
 
 if [[ "$MODE" == "setup" ]]; then
     echo "=== SSH Key Setup Wizard ==="
-    read -rp "Enter a short nickname for this host (e.g. 'docker'): " HOST_ALIAS
-    read -rp "Enter the remote hostname or IP (e.g. 'docker.gnomehub.home'): " HOST_NAME
-    read -rp "Enter the remote username (e.g. 'josh'): " HOST_USER
-    read -rp "Enter filename for key (will be stored in ~/.ssh/, e.g. 'id_ed25519_docker'): " KEY_NAME
-    read -rp "Optional comment for key (e.g. 'docker-access'): " KEY_COMMENT
+    read -rp "Enter a short nickname for this host: " HOST_ALIAS
+    read -rp "Enter the remote hostname or IP: " HOST_NAME
+    read -rp "Enter the remote username: " HOST_USER
+    read -rp "Enter filename for key (will be stored in ~/.ssh/): " KEY_NAME
+    read -rp "Optional comment for key: " KEY_COMMENT
 
     KEY_PATH="$SSH_DIR/$KEY_NAME"
 
