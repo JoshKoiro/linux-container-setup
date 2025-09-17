@@ -6,6 +6,10 @@ random scripts to help in provisioning lxc containers on proxmox - until I figur
 ```
 
 ```
+/bin/bash -c "$(curl -fsSL https://raw.Githubusercontent.com/JoshKoiro/linux-container-setup/main/env-setup.sh)"
+```
+
+```
 /bin/bash -c "$(curl -fsSL https://raw.Githubusercontent.com/JoshKoiro/linux-container-setup/main/docker.sh)"
 ```
 
