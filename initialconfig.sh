@@ -208,9 +208,15 @@ install_nala() {
 
   if command -v nala >/dev/null 2>&1; then
     PKG_FRONTEND="nala"
-    log_info "Configuring nala with fastest mirrors..."
-    nala fetch --auto -y || log_warning "Could not automatically configure nala mirrors"
-    log_success "Nala configuration step completed"
+    read -r -p "test mirrors for nala package manager? (y/N): " mirror_confirm || true
+    if [[ ! "$mirror_confirm" =~ ^[Yy]$ ]]; then
+      log_info "Configuring nala with fastest mirrors..."
+      nala fetch --auto -y || log_warning "Could not automatically configure nala mirrors"
+      log_success "Nala configuration step completed"
+    else
+      log_info "Skipping mirror test"
+    fi
+    
     log_info "Running Nala update"
     nala update
   fi
