@@ -1,10 +1,14 @@
 # linux-container-setup
 random scripts to help in provisioning lxc containers on proxmox - until I figure out terraform...
 
+Install inital configuration as root - this script will allow you to set up a user
+
 ```
 /bin/bash -c "$(wget -qO- https://raw.githubusercontent.com/JoshKoiro/linux-container-setup/main/initialconfig.sh)"
 ```
 
+```
+/bin/bash -c "$(curl -fsSL https://raw.Githubusercontent.com/JoshKoiro/linux-container-setup/main/homebrew.sh)"
 ```
 /bin/bash -c "$(curl -fsSL https://raw.Githubusercontent.com/JoshKoiro/linux-container-setup/main/env-setup.sh)"
 ```
