@@ -8,7 +8,7 @@ Install inital configuration as root - this script will allow you to set up a us
 ```
 
 ```
-/bin/bash -c "$(curl -fsSL https://raw.Githubusercontent.com/JoshKoiro/linux-container-setup/main/homebrew.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.Githubusercontent.com/JoshKoiro/linux-container-setup/main/homebrew-gum.sh)"
 ```
 /bin/bash -c "$(curl -fsSL https://raw.Githubusercontent.com/JoshKoiro/linux-container-setup/main/env-setup.sh)"
 ```
