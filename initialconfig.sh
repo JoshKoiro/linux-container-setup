@@ -292,6 +292,18 @@ install_additional_packages() {
   log_success "Additional packages installation completed"
 }
 
+install_homebrew(){
+  # Download and Install Homebrew
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+  # Complete installation of homebrew
+  echo >> ~/.bashrc
+  echo  'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shell env)"
+  sudo nala install build-essential -y
+  source ~./bashrc
+}
+
 post_install_config() {
   log_info "Performing post-installation configuration..."
 
@@ -345,6 +357,7 @@ main() {
   update_system
   install_nala
   install_additional_packages
+  install_homebrew
   post_install_config
 
   local total_packages=0
