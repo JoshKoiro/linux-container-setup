@@ -354,16 +354,22 @@ main() {
   [[ "$INSTALL_MONITORING_PACKAGES" == true ]] && total_packages=$((total_packages + ${#MONITORING_PACKAGES[@]}))
   total_packages=$((total_packages + ${#CUSTOM_PACKAGES[@]}))
 
+  # Get local IP address
+  local local_ip
+  local_ip=$(ip route get 1.1.1.1 | awk '{print $7; exit}')
+
   echo "================================================"
   log_success "Container provisioning completed successfully!"
   echo "================================================"
   echo
   log_info "Summary:"
   echo -e "  • Hostname:\t\t$(hostname)"
+  echo -e "  • IP Address:\t\t${local_ip}"
   echo -e "  • New user:\t\t${SCRIPT_USER:-<none>}"
   echo -e "  • Package frontend:\t${PKG_FRONTEND}"
   echo -e "  • System:\t\tfully updated"
   echo -e "  • Packages selected:\t${total_packages}"
+  echo -e "  • Login via ssh using:\tssh ${SCRIPT_USER:-<new-username>}@${local_ip}"
   echo
   log_info "Next steps:"
   echo "  • Reboot the container to ensure all changes take effect: sudo reboot"
