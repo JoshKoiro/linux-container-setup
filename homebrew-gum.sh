@@ -9,3 +9,6 @@
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shell env)"
   sudo nala install build-essential -y
   source ~/.bashrc
+
+  # Install gum
+  brew install gum
