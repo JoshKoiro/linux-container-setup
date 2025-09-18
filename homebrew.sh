@@ -1,7 +1,7 @@
   #!/bin/bash
   
   # Download and Install Homebrew
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  /bin/bash -c "$(curl -fsSL -H 'Cache-Control: no-cache, no-store' https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
   # Complete installation of homebrew
   echo >> ~/.bashrc
