@@ -56,7 +56,7 @@ download() {
     
     local url="$1"
     local destination="$2"
-    local download_tool="wget"
+    local download_tool="curl"
     local filename=""
     
     # Validate URL format
