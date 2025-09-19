@@ -201,9 +201,13 @@ updateBashrc() {
 log "Starting environment setup..."
 debug "The log file for this session is located at: $LOG_FILE"
 
-# Call the load function with a custom title for each step.
-load "Installing eza..." brew install eza
 load "Updating Homebrew formulas..." brew update
+
+# Download and install starship
+load "Installing starship..." brew install starship
+
+# Download and install eza
+load "Installing eza..." brew install eza
 
 # Download and Install Neovim
 load "Installing neovim..." brew install neovim
@@ -227,15 +231,27 @@ load "Cloning repo for lazyvim..." git clone https://github.com/LazyVim/starter 
 # remove the .git folder
 load "Removing .git folder for lazyvim template...." rm -rf ~/.config/nvim/.git
 
+
+# Initialize Starship
+load "Updating ~/.bashrc with starship initialization..." updateBashrc "eval '$(starship init bash)'"
+
 # Custom configurations - Example downloads
 # You can now use the download function like this:
 repo_url="https://raw.githubusercontent.com/JoshKoiro/linux-container-setup/main/"
 
 # Example: Download a custom nvim config file
-# download_config "https://raw.githubusercontent.com/yourusername/dotfiles/main/nvim/init.lua" "~/.config/nvim/"
+download ${repo_url}/nvim/init.lua "~/.config/nvim/init.lua"
+download ${repo_url}/nvim/lazyvim.json "~/.config/nvim/lazyvim.json"
+download ${repo_url}/nvim/lazy-lock.json "~/.config/nvim/lazy-lock.json"
+download ${repo_url}/nvim/config/autocmds.lua "~/.config/nvim/config/autocmds.lua"
+download ${repo_url}/nvim/config/keymaps.lua "~/.config/nvim/config/keymaps.lua"
+download ${repo_url}/nvim/config/lazy.lua "~/.config/nvim/config/lazy.lua"
+download ${repo_url}/nvim/config/options.lua "~/.config/nvim/config/options.lua"
+download ${repo_url}/nvim/plugins/example.lua "~/.config/nvim/plugins/example.lua"
+download ${repo_url}/nvim/config/transparent.lua "~/.config/nvim/config/transparent.lua"
 
 # Example: Download fzf configuration
-# download_config "https://raw.githubusercontent.com/yourusername/dotfiles/main/fzf/fzf.bash" "~/.config/fzf/"
+
 
 # Example: Download eza configuration
 # download "https://raw.githubusercontent.com/yourusername/dotfiles/main/eza/config" "$HOME/.config/eza/config"
