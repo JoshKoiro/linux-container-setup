@@ -10,6 +10,10 @@ Install inital configuration as root - this script will allow you to set up a us
 ```
 /bin/bash -c "$(curl -fsSL https://raw.Githubusercontent.com/JoshKoiro/linux-container-setup/main/homebrew-gum.sh)"
 ```
+
+**Make sure to run `source ~/.bashrc` after installing homebrew to add it to the $PATH**
+
+```
 /bin/bash -c "$(curl -fsSL https://raw.Githubusercontent.com/JoshKoiro/linux-container-setup/main/env-setup.sh)"
 ```
 

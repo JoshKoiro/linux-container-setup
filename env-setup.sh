@@ -205,6 +205,7 @@ load "Updating Homebrew formulas..." brew update
 
 # Download and install starship
 load "Installing starship..." brew install starship
+download ${repo_url}/configs/starship.toml "~/.config/starship.toml"
 
 # Download and install eza
 load "Installing eza..." brew install eza
@@ -260,4 +261,4 @@ download ${repo_url}/nvim/config/transparent.lua "~/.config/nvim/config/transpar
 # download_config "https://raw.githubusercontent.com/yourusername/dotfiles/main/btop/btop.conf" "~/.config/btop/"
 
 # Example: Download tmux configuration
-download ${repo_url}/configs/.tmux.conf "$HOME/.tmux.conf"
+download ${repo_url}/configs/.tmux.conf "~/.tmux.conf"
