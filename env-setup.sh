@@ -205,7 +205,6 @@ load "Updating Homebrew formulas..." brew update
 
 # Download and install starship
 load "Installing starship..." brew install starship
-download ${repo_url}/configs/starship.toml "~/.config/starship.toml"
 
 # Download and install eza
 load "Installing eza..." brew install eza
@@ -239,6 +238,8 @@ load "Updating ~/.bashrc with starship initialization..." updateBashrc "eval '$(
 # Custom configurations - Example downloads
 # You can now use the download function like this:
 repo_url="https://raw.githubusercontent.com/JoshKoiro/linux-container-setup/main/"
+
+download ${repo_url}/configs/starship.toml "~/.config/starship.toml"
 
 # Example: Download a custom nvim config file
 download ${repo_url}/nvim/init.lua "~/.config/nvim/init.lua"
