@@ -229,7 +229,7 @@ load "Removing .git folder for lazyvim template...." rm -rf ~/.config/nvim/.git
 
 # Custom configurations - Example downloads
 # You can now use the download function like this:
-local repo_url="https://raw.githubusercontent.com/JoshKoiro/linux-container-setup/main/"
+repo_url="https://raw.githubusercontent.com/JoshKoiro/linux-container-setup/main/"
 
 # Example: Download a custom nvim config file
 # download_config "https://raw.githubusercontent.com/yourusername/dotfiles/main/nvim/init.lua" "~/.config/nvim/"
