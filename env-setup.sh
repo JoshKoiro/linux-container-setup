@@ -35,12 +35,12 @@ load() {
     printf -v cmd_str '%q ' "$@"
 
     # Announce the start of the command.
-    echo -e "\n--- Starting: $title ---" | tee -a "$LOG_FILE"
+    # echo -e "\n--- Starting: $title ---" | tee -a "$LOG_FILE"
 
     # We wrap the *entire gum spin command* inside `script`.
     # `script` creates a pty, making gum believe it's in an interactive session,
     # thus enabling the spinner. The output of this pty is then piped to tee.
-    script -q /dev/null -c "gum spin --show-output --spinner points --title \"$title\" -- $cmd_str" | tee -a "$LOG_FILE"
+    script -q /dev/null -c "gum spin --spinner points --title \"$title\" -- $cmd_str" | tee -a "$LOG_FILE"
 }
 
 # --- Download Function ---
