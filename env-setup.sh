@@ -43,6 +43,42 @@ load() {
     script -q /dev/null -c "gum spin --show-output --spinner points --title \"$title\" -- $cmd_str" | tee -a "$LOG_FILE"
 }
 
+updateBashrc() { 
+# Example usage:
+# updateBashrc "export PATH=\$PATH:/usr/local/bin"
+# updateBashrc "alias ll='ls -la'"
+    
+    # Check if a parameter was provided
+    if [ $# -eq 0 ]; then
+        error "no parameter provided for updateBashrc"
+        return 1
+    fi
+    
+    local text_to_add="$1"
+    local bashrc_file="$HOME/.bashrc"
+    
+    # Create .bashrc if it doesn't exist
+    if [ ! -f "$bashrc_file" ]; then
+        touch "$bashrc_file"
+        log "Created new .bashrc file"
+    fi
+    
+    # Check if the text already exists in .bashrc
+    if grep -Fxq "$text_to_add" "$bashrc_file"; then
+        warn "Text already exists in .bashrc - no changes made"
+        return 0
+    else
+        # Append the text to .bashrc
+        echo "$text_to_add" >> "$bashrc_file"
+        if [ $? -eq 0 ]; then
+            log "Successfully added to .bashrc: $text_to_add"
+        else
+            error "Error: Failed to write to .bashrc"
+            return 1
+        fi
+    fi
+}
+
 # --- Script Logic ---
 
 # Clear the log file for a fresh run.
