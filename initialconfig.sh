@@ -24,6 +24,7 @@ CORE_PACKAGES=(
   "unzip"
   "zip"
   "git"
+  "stow"
   "ca-certificates"
   "gnupg"
   "lsb-release"
@@ -215,9 +216,9 @@ install_nala() {
       log_info "Configuring nala with fastest mirrors..."
       nala fetch --auto -y || log_warning "Could not automatically configure nala mirrors"
       log_success "Nala configuration step completed"
-      
+
     fi
-    
+
     log_info "Running Nala update"
     nala update
   fi
@@ -389,3 +390,4 @@ main() {
 if [[ "${BASH_SOURCE:-}" == "${0}" ]] || [[ -z "${BASH_SOURCE:-}" ]]; then
   main "$@"
 fi
+
