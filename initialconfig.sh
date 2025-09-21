@@ -29,6 +29,7 @@ CORE_PACKAGES=(
   "gnupg"
   "lsb-release"
   "tmux"
+  "jp2a"
 )
 
 DEV_PACKAGES=(
@@ -55,7 +56,6 @@ MONITORING_PACKAGES=(
 
 CUSTOM_PACKAGES=(
   "cowsay"
-  "screenfetch"
 )
 
 # --- END OF CONFIGURATION ---
@@ -390,4 +390,3 @@ main() {
 if [[ "${BASH_SOURCE:-}" == "${0}" ]] || [[ -z "${BASH_SOURCE:-}" ]]; then
   main "$@"
 fi
-
